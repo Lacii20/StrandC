@@ -30,6 +30,26 @@ namespace StrandC
                 }
                 Console.WriteLine($"9. Feladat");
                 Console.WriteLine($"A leghidegebb  víz a(z) {min.Név} nevű fürdöben van \r\n");
+
+                Console.WriteLine($"10.Feladat\r\n Kérem, adja meg a fürdő nevét!");
+                string nev = Console.ReadLine();
+                Furdo valasz = null;
+                foreach (var item in list)
+                {
+                    if (item.Név == nev)
+                    {
+                        valasz = item;
+                    }
+                }
+                if (valasz != null)
+                {
+                    Console.WriteLine($"A {valasz.Telepules()} településen van," + $"az irányítószáma: {valasz.IRSZ()}");
+
+                }
+                else
+                {
+                    Console.WriteLine("Nincs ilyen nevű fürdő!");
+                }
             }
         }
     }
