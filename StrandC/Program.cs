@@ -20,6 +20,17 @@ namespace StrandC
             }
             double átlag = osszeg / (double)list.Count;
             Console.WriteLine($"8. Feladat \r\n A Furdobelepok átlagos ára {átlag:F1} \r\n");
+
+            Furdo min = list[0];
+            foreach (var item in list)
+            {
+                if (item.Vizhőfok < min.Vizhőfok)
+                {
+                    min = item;
+                }
+                Console.WriteLine($"9. Feladat");
+                Console.WriteLine($"A leghidegebb  víz a(z) {min.Név} nevű fürdöben van \r\n");
+            }
         }
     }
 }
