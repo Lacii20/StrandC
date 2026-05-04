@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace StrandC
 {
-    internal class Furdok
-    {
+   
         public class Furdo
         {
             public string Név { get; private set; }
