@@ -1,4 +1,5 @@
-﻿namespace StrandC
+﻿
+namespace StrandC
 {
     internal class Program
     {
